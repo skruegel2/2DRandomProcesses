@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan 24 18:54:16 2021
-
-@author: Wenrui Li
-"""
-
 import numpy as np                 # Numpy is a library support computation of large, multi-dimensional arrays and matrices.
 from PIL import Image              # Python Imaging Library (abbreviated as PIL) is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats.
 import matplotlib.pyplot as plt    # Matplotlib is a plotting library for the Python programming language.
@@ -172,13 +164,6 @@ img_y = Image.fromarray(x)
 y_array = np.array(img_y)
 plt.imshow(y_array, cmap=plt.cm.gray)
 plt.show()
-#img_y.save('y.tif');
-# Import Image Data into Numpy array.
-# The matrix x contains a 2-D array of 8-bit gray scale values. 
-##x = np.array(im)
-##print('Data type: ', x.dtype)
-##
-### Test BetterSpecAnal
-##x = np.double(x)/255.0
-##BetterSpecAnal(x)
+BetterSpecAnal(x)
+
 
